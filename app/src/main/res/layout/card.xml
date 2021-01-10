@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#807F7F"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_shett"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/text1_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="pdpuz"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Добавит в список ''Близкие друзя''"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1_1" />
+
+        <ImageButton
+            android:id="@+id/image_item"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toTopOf="@id/text_1_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/text_1_2"
+            android:src="@drawable/ic_star"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/text_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Скрытъ"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_1_2" />
+        <ImageButton
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_1_3"
+            app:layout_constraintBottom_toBottomOf="@id/text_1_3"
+            android:background="@color/white"
+            android:src="@drawable/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Ограничит доступ"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_1_3" />
+        <ImageButton
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_1_4"
+            app:layout_constraintBottom_toBottomOf="@id/text_1_4"
+            android:background="@color/white"
+            android:src="@drawable/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

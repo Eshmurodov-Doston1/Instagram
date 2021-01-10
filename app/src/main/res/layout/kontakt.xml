@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/card12"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="#807F7F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_shett"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/kontakt"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Контакты"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tel_number"
+                    app:layout_constraintTop_toBottomOf="@id/kontakt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Как позвонитъ"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/number_tel"
+                    app:layout_constraintTop_toBottomOf="@id/tel_number"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:text="+998 97 447 47 41"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/pdp_email"
+                    app:layout_constraintTop_toBottomOf="@id/number_tel"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Эл. адрес"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/email_pdp"
+                    app:layout_constraintTop_toBottomOf="@id/pdp_email"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:text="www.pdp.uz@gmail.com"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
